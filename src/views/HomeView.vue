@@ -1,9 +1,10 @@
 <script setup lang="ts">
+import { Navbar } from '@/components/TheNavbar.vue'
 
 </script>
 
 <template>
-
+  <Navbar />
   <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
   <dialog id="my_modal_1" class="modal">
     <div class="modal-box">
