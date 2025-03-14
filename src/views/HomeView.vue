@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import TheStudies from '@/components/TheStudies.vue'
+import ThePersonalCard from '@/components/ThePersonalCard.vue'
+import TheStudies from '@/components/TheFormation.vue'
 </script>
 
 <template>
-  <div class="flex flex-row mt-10">
-
+  <div class="flex flex-row w-full h-full custom-bg">
+    <ThePersonalCard />
     <TheStudies />
   </div>
 </template>
