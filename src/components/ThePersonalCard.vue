@@ -1,9 +1,9 @@
-<script setup>
+<script setup lang="ts">
 </script>
 
 <template>
-  <ul class="list bg-base-100 rounded-box shadow-md">
-
+  <ul class="list bg-base-100 rounded-box shadow-2xl">
+    <h3 class="text-4xl">NACHO DE LA TORRE PLANAS</h3>
     <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Most played songs this week</li>
 
     <li class="list-row">
