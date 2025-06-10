@@ -12,4 +12,11 @@ import TheFormation from '@/components/TheFormation.vue'
       <TheFormation />
     </div>
   </div>
+
 </template>
+
+<style scoped>
+.home {
+  padding: 1rem;
+}
+</style>
