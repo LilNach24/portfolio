@@ -4,15 +4,14 @@ import TheFormation from '@/components/TheFormation.vue'
 </script>
 
 <template>
-  <div class="flex flex-row w-full h-full custom-bg !space-x-4 p-3">
-    <div class="w-1/2">
+  <div class="flex flex-col sm:flex-row w-full h-full custom-bg gap-4 p-3">
+    <div class="w-full sm:w-1/2">
       <ThePersonalCard />
     </div>
-    <div class="w-1/2">
+    <div class="w-full sm:w-1/2">
       <TheFormation />
     </div>
   </div>
-
 </template>
 
 <style scoped>
