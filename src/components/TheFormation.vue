@@ -3,27 +3,23 @@
 
 <template>
   <div class="card bg-base-100 shadow-md animate-cartaBottom">
-    <div class="card-body">
-      <h2 class="card-title">Experiencia</h2>
-      <ul class="space-y-2 text-sm">
+    <div class="card-body space-y-6">
+      <h2 class="card-title">Mi Roadmap</h2>
+
+      <ul class="space-y-4 text-sm">
         <li>
-          <strong>Brain2Store</strong> - Desarrollador full stack<br />
-          <span class="opacity-70">mayo 2024 - Actualidad | Sant Cugat del Vallès</span>
+          <strong>2024 - Actualidad</strong><br /> 
+          <span class="opacity-70">👨‍💻 Desarrollador full stack en Brain2Store (Sant Cugat del Vallès)</span><br />
+          <span class="opacity-70">🎓 ASIR en Institut Camí de Mar</span>
         </li>
         <li>
-          <strong>Saint-Gobain</strong> - Desarrollador full stack<br />
-          <span class="opacity-70">mayo 2023 - mayo 2024 | l'Arboç</span>
-        </li>
-      </ul>
-      <h2 class="card-title pt-4">Educación</h2>
-      <ul class="space-y-2 text-sm">
-        <li>
-          <strong>Institut Camí de Mar</strong> - ASIR<br />
-          <span class="opacity-70">sept. 2024 - may. 2025</span>
+          <strong>2023 - 2024</strong><br />
+          <span class="opacity-70">👨‍💻 Desarrollador full stack en Saint-Gobain (l'Arboç)</span><br />
+          <span class="opacity-70">🎓 DAW en Institut Camí de Mar</span>
         </li>
         <li>
-          <strong>Institut Camí de Mar</strong> - DAW<br />
-          <span class="opacity-70">sept. 2022 - may. 2024</span>
+          <strong>2020 - 2022</strong><br />
+          <span class="opacity-70">🎓 Bachillerato Científico-Tecnológico en Institut Andreu Nin</span>
         </li>
       </ul>
     </div>

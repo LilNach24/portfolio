@@ -1,15 +1,18 @@
 <script setup lang="ts">
 import ThePersonalCard from '@/components/ThePersonalCard.vue'
-import TheFormation from '@/components/TheFormation.vue'
+
+import TheNavbar from '@/components/TheNavbar.vue'
 </script>
 
 <template>
-  <div class="flex flex-col sm:flex-row w-full h-full custom-bg gap-4 p-3">
-    <div class="w-full sm:w-1/2">
-      <ThePersonalCard />
-    </div>
-    <div class="w-full sm:w-1/2">
-      <TheFormation />
+  <div
+    class="bg-gradient-to-r from-[#291ca0] via-[#c4712d] to-[#a325d4] bg-[length:400%_400%] animate-gradient min-h-screen w-full"
+  >
+    <TheNavbar />
+    <div class="flex flex-col w-full h-full custom-bg gap-4 p-3">
+      <div class="w-full sm:p-10">
+        <ThePersonalCard />
+      </div>
     </div>
   </div>
 </template>
