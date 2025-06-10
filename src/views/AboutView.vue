@@ -1,15 +1,14 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>Sobre mí</h1>
+    <p>
+      Esta sección contiene información general sobre mi experiencia y habilidades profesionales.
+    </p>
   </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+<style scoped>
+.about {
+  padding: 1rem;
 }
 </style>
