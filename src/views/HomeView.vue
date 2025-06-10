@@ -9,16 +9,8 @@ import TheNavbar from '@/components/TheNavbar.vue'
     class="bg-gradient-to-r from-[#291ca0] via-[#c4712d] to-[#a325d4] bg-[length:400%_400%] animate-gradient min-h-screen w-full"
   >
     <TheNavbar />
-    <div class="flex flex-col w-full h-full custom-bg gap-4 p-3">
-      <div class="w-full sm:p-10">
-        <ThePersonalCard />
-      </div>
+    <div class="flex items-center justify-center min-h-screen sm:p-10">
+      <ThePersonalCard />
     </div>
   </div>
 </template>
-
-<style scoped>
-.home {
-  padding: 1rem;
-}
-</style>

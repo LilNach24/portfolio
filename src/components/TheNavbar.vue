@@ -1,6 +1,6 @@
 <script setup lang="ts"></script>
 <template>
-  <div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar bg-base-100 shadow-sm fixed">
     <div class="navbar-start">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -40,7 +40,7 @@
       <ul class="menu menu-horizontal px-1">
         <li>
           <a>
-            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/">HOME</RouterLink>
           </a>
         </li>
         <li>

@@ -1,19 +1,23 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { Linkedin } from 'lucide-vue-next'
+</script>
 
 <template>
-  <div class="card bg-base-100 shadow-xl animate-cartaBottom">
-    <figure class="pt-10">
-      <img src="@/assets/img/profile.png" class="w-3xs" />
+  <div class="card animate-cartaBottom">
+    <figure>
+      <img src="@/assets/img/profile.png" class="w-xs" />
     </figure>
     <div class="card-body items-center text-center">
       <h2 class="card-title text-3xl font-bold">Nacho de la Torre Planas</h2>
-      <p class="py-2">Desarrollador de aplicaciones web - fullstack</p>
-      <p class="text-sm opacity-80">
-        Full stack developer specialized in Laravel, Vue.js and Tailwind CSS. Passionate about UX/UI
-        and mentoring new developers.
+      <h3 class="text-xl font-bold">Software engineering</h3>
+      <p class="text-lg italic mt-2">
+       "Failure is the shadow of success"
       </p>
+
       <div class="card-actions pt-4">
-        <a href="https://www.linkedin.com" target="_blank" class="btn btn-primary">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/nacho-de-la-torre-planas-b71145314" target="_blank">
+          <Linkedin></Linkedin>
+        </a>
       </div>
     </div>
   </div>
