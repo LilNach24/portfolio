@@ -1,6 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+import Logo from '@/assets/img/logoNM.png'
+import { AudioLines } from 'lucide-vue-next';
+
+</script>
 <template>
-  <div class="navbar bg-base-100 shadow-sm fixed">
+<div class="navbar bg-black/10 text-white shadow-md backdrop-blur-md fixed top-0 left-0 w-full z-50">
+
+
     <div class="navbar-start">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -34,7 +41,7 @@
           <li><a>Item 3</a></li>
         </ul>
       </div>
-      <a class="btn btn-ghost text-xl">daisyUI</a>
+      <a class="px-4"><img :src="Logo" alt="logo" class="w-16 h-16"></a>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
@@ -45,13 +52,13 @@
         </li>
         <li>
           <a>
-            <RouterLink to="/about">About</RouterLink>
+            <RouterLink to="/about">SOBRE MI</RouterLink>
           </a>
         </li>
       </ul>
     </div>
-    <div class="navbar-end">
-      <a class="btn">Button</a>
+    <div class="navbar-end px-5">
+     <AudioLines />
     </div>
   </div>
 </template>

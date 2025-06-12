@@ -13,4 +13,7 @@ import TheNavbar from '@/components/TheNavbar.vue'
       <ThePersonalCard />
     </div>
   </div>
+  <div class="min-h-screen">
+    
+  </div>
 </template>

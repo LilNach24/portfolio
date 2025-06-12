@@ -8,9 +8,9 @@ import { Linkedin } from 'lucide-vue-next'
       <img src="@/assets/img/profile.png" class="w-xs" />
     </figure>
     <div class="card-body items-center text-center">
-      <h2 class="card-title text-3xl font-bold">Nacho de la Torre Planas</h2>
-      <h3 class="text-xl font-bold">Software engineering</h3>
-      <p class="text-lg italic mt-2">
+      <h2 class="card-title text-4xl font-bold font-pacifico text-white">Nacho de la Torre Planas</h2>
+      <h3 class="text-xl font-semibold  text-whiten font-mono text-white">Software engineering</h3>
+      <p class="text-lg italic mt-2 text-white">
        "Failure is the shadow of success"
       </p>
 
