@@ -2,6 +2,18 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+@font-face {
+  font-family: 'Pacifico';
+  src: url('/fonts/Pacifico-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* mejora el rendimiento */
+}
+
+.font-pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
 @theme {
     --animate-cartaBottom: cartaBottom 0.3s ease-in forwards;
     --animate-gradient: gradient 15s ease infinite;

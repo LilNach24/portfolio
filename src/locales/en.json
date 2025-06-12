@@ -1,0 +1,10 @@
+{
+    "personalCard": {
+        "job": "Software engineer"
+    },
+    "navbar": {
+        "home": "Home",
+        "about": "About me",
+        "contact": "Contact"
+    }
+}

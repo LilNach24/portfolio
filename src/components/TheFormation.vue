@@ -4,7 +4,7 @@
 <template>
   <div class="card bg-base-100 shadow-md animate-cartaBottom">
     <div class="card-body space-y-6">
-      <h2 class="card-title">Mi Roadmap</h2>
+      <h2 class="card-title">EXPERIENCIA</h2>
 
       <ul class="space-y-4 text-sm">
         <li>
