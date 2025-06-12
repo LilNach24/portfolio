@@ -9,6 +9,7 @@ import EnglishFlag from '@/assets/svg/flags/english.svg'
 import SpanishFlag from '@/assets/svg/flags/spanish.svg'
 
 const { locale } = useI18n()
+const { t } = useI18n()
 
 function toggleLang() {
   locale.value = locale.value === 'en' ? 'es' : 'en'
@@ -44,12 +45,15 @@ const currentFlag = computed(() => {
     </div>
 
     <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1">
+      <ul class="menu menu-horizontal px-1 uppercase">
         <li>
-          <RouterLink to="/">HOME</RouterLink>
+          <a href="#home"> {{t('navbar.home')}}</a>
         </li>
         <li>
-          <RouterLink to="/about">SOBRE MI</RouterLink>
+          <a href="#about">{{t('navbar.about')}}</a>
+        </li>
+        <li>
+          <a href="#contact">{{t('navbar.contact')}}</a>
         </li>
       </ul>
     </div>
@@ -62,7 +66,9 @@ const currentFlag = computed(() => {
           class="w-6 cursor-pointer hover:scale-110 transition rounded-sm"
           @click="toggleLang"
         />
-        <AudioLines />
+        <div>
+          <RouterLink to="/music"><AudioLines /></RouterLink>
+        </div>
       </div>
     </div>
   </div>
