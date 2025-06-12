@@ -1,10 +1,10 @@
 {
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre mi",
+    "contact": "Contacto"
+  },
   "personalCard": {
-    "job": "Ingeniero de software",
-    "navbar": {
-        "home": "Inicio",
-        "about": "Sobre mi",
-        "contact": "Contacto"
-    }
+    "job": "Ingeniero de software"
   }
 }
