@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { Linkedin } from 'lucide-vue-next'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -9,7 +12,7 @@ import { Linkedin } from 'lucide-vue-next'
     </figure>
     <div class="card-body items-center text-center">
       <h2 class="card-title text-4xl font-bold font-pacifico text-white">Nacho de la Torre Planas</h2>
-      <h3 class="text-xl font-semibold  text-whiten font-mono text-white">Software engineering</h3>
+      <h3 class="text-xl font-semibold  text-whiten font-mono text-white">{{ t('personalCard.job') }}</h3>
       <p class="text-lg italic mt-2 text-white">
        "Failure is the shadow of success"
       </p>
