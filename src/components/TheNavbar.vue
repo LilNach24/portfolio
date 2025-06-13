@@ -47,7 +47,8 @@ const currentFlag = computed(() => {
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1 uppercase">
         <li>
-          <a href="#home"> {{t('navbar.home')}}</a>
+          <RouterLink to="/" class="font-bold">
+            {{t('navbar.home')}}</RouterLink>
         </li>
         <li>
           <a href="#about">{{t('navbar.about')}}</a>
