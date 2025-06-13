@@ -1,10 +1,28 @@
 {
-    "personalCard": {
-        "job": "Software engineer"
-    },
-    "navbar": {
-        "home": "Home",
-        "about": "About me",
-        "contact": "Contact"
+  "navbar": {
+    "home": "Home",
+    "about": "About me",
+    "contact": "Contact"
+  },
+  "personalCard": {
+    "job": "Software engineer"
+  },
+  "about": {
+    "title": "About me"
+  },
+  "education": {
+    "title": "Education",
+    "items": {
+      "2024-2025": "ASIR at Institut Camí de Mar",
+      "2022-2024": "DAW at Institut Camí de Mar",
+      "2020-2022": "Scientific-Technological Baccalaureate at Institut Andreu Nin"
     }
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "items": {
+      "2024-present": "Full Stack Developer at Brain2Store (Sant Cugat del Vallès)",
+      "2023-2024": "Full Stack Developer at Saint-Gobain (l'Arboç)"
+    }
+  }
 }

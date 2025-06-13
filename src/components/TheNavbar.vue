@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-
-import { AudioLines } from 'lucide-vue-next'
 import { useI18n } from 'vue-i18n'
 
 import Logo from '@/assets/img/logoNM.png'
@@ -18,6 +16,9 @@ function toggleLang() {
 const currentFlag = computed(() => {
   return locale.value === 'es' ? SpanishFlag : EnglishFlag
 })
+
+const props = defineProps<{ scrollToSection: (index: number) => void }>()
+
 </script>
 
 <template>
@@ -47,14 +48,13 @@ const currentFlag = computed(() => {
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1 uppercase">
         <li>
-          <RouterLink to="/" class="font-bold">
-            {{t('navbar.home')}}</RouterLink>
+          <a @click="props.scrollToSection(0)">{{t('navbar.home')}}</a>
         </li>
         <li>
-          <a href="#about">{{t('navbar.about')}}</a>
+          <a @click="props.scrollToSection(1)">{{t('navbar.about')}}</a>
         </li>
         <li>
-          <a href="#contact">{{t('navbar.contact')}}</a>
+          <a @click="props.scrollToSection(2)">{{t('navbar.contact')}}</a>
         </li>
       </ul>
     </div>
@@ -67,9 +67,6 @@ const currentFlag = computed(() => {
           class="w-6 cursor-pointer hover:scale-110 transition rounded-sm"
           @click="toggleLang"
         />
-        <div>
-          <RouterLink to="/music"><AudioLines /></RouterLink>
-        </div>
       </div>
     </div>
   </div>
