@@ -13,15 +13,15 @@
   "education": {
     "title": "Formación",
     "items": {
-      "2024-2025": "ASIR en Institut Camí de Mar",
-      "2022-2024": "DAW en Institut Camí de Mar",
-      "2020-2022": "Bachillerato Científico-Tecnológico en Institut Andreu Nin"
+      "2024-2025": "Administración de Sistemas Informáticos y redes",
+      "2022-2024": "Desarrollo de aplicaciones web",
+      "2020-2022": "Bachillerato Científico-Tecnológico"
     }
   },
   "experience": {
     "title": "Experiencia profesional",
     "items": {
-      "2024-present": "Desarrollador Full Stack en Brain2Store (Sant Cugat del Vallès)",
+      "2024-presente": "Desarrollador Full Stack en Brain2Store (Sant Cugat del Vallès)",
       "2023-2024": "Desarrollador Full Stack en Saint-Gobain (l'Arboç)"
     }
   }

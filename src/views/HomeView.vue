@@ -2,7 +2,7 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 import ThePersonalCard from '@/components/ThePersonalCard.vue'
-import TheFormation from '@/components/TheFormation.vue'
+import TheFormation from '@/components/TheResumeTimeline.vue'
 import TheNavbar from '@/components/TheNavbar.vue'
 
 const sections = ['home', 'about', 'contact']
@@ -74,15 +74,20 @@ onBeforeUnmount(() => {
     </div>
     <section
       id="home"
-      class="bg-gradient-to-r from-[#291ca0] via-[#c4712d] to-[#a325d4] bg-[length:400%_400%] animate-gradient h-screen w-full"
+      class="bg-gradient-to-r from-[#291ca0] via-[#c4712d] to-[#a325d4] bg-[length:400%_400%] animate-gradient min-h-screen w-full"
     >
-      <div class="flex items-center justify-center h-screen sm:p-10">
+      <div class="flex items-center justify-center min-h-screen sm:p-10">
         <ThePersonalCard />
       </div>
     </section>
 
-    <section id="about" class="h-screen flex items-center justify-center bg-purple-900 text-white">
-      <TheFormation />
+    <section
+      id="about"
+      class="bg-gradient-to-r from-[#4c0b81] via-[#330879] to-[#72039e] bg-[length:400%_400%] animate-gradient min-h-screen"
+    >
+      <div class="flex items-center justify-center min-h-screen text-white">
+        <TheFormation />
+      </div>
     </section>
 
     <section id="contact" class="h-screen flex items-center justify-center bg-blue-900 text-white">

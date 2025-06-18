@@ -11,11 +11,11 @@
     "title": "About me"
   },
   "education": {
-    "title": "Education",
+    "title": "Formation",
     "items": {
-      "2024-2025": "ASIR at Institut Camí de Mar",
-      "2022-2024": "DAW at Institut Camí de Mar",
-      "2020-2022": "Scientific-Technological Baccalaureate at Institut Andreu Nin"
+      "2024-2025": "Administration of Computer Systems and Networks",
+      "2022-2024": "Web Application Development",
+      "2020-2022": "Science and Technology Baccalaureate"
     }
   },
   "experience": {
