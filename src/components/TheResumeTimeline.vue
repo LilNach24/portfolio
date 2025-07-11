@@ -70,7 +70,7 @@ const experienceTimeline = computed(() => [
 
     <!-- EDUCATION -->
     <div class="flex flex-col items-center font-mono">
-      <h3 class="text-3xl font-bold text-white uppercase pt-8 pb-4 font-mono">
+      <h3 class="text-3xl font-bold text-white uppercase  pb-4 font-mono">
         {{ t('education.title') }}
       </h3>
       <ul class="timeline timeline-vertical">

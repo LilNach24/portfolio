@@ -22,7 +22,7 @@ const props = defineProps<{ scrollToSection: (index: number) => void }>()
 </script>
 
 <template>
-  <div class="navbar bg-black/10 text-white shadow-md backdrop-blur-md fixed top-0 left-0 w-full z-50 font-mono">
+  <div class="navbar bg-black/10 text-white shadow-md backdrop-blur-md fixed top-0 left-0 w-full h-14 z-50 font-mono">
     <div class="navbar-start">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -46,7 +46,7 @@ const props = defineProps<{ scrollToSection: (index: number) => void }>()
     </div>
 
     <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1 uppercase text-lg">
+      <ul class="menu menu-horizontal px-1 uppercase text-md xl:tect-lg">
         <li>
           <a @click="props.scrollToSection(0)">{{t('navbar.home')}}</a>
         </li>
