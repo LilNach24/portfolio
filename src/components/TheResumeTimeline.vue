@@ -17,10 +17,10 @@ const experienceTimeline = computed(() => [
 </script>
 
 <template>
-  <div class="animate-cartaBottom p-3 lg:p-0 flex flex-col 2xl:flex-row items-center md:gap-12 xl:gap-20 ">
+  <div class="animate-cartaBottom pt-20 p-3  flex flex-col 2xl:flex-row items-center md:gap-12 xl:gap-20 ">
     <!-- EXPERIENCE -->
     <div class="flex flex-col items-center mb-16 font-mono">
-      <h3 class="text-3xl font-bold mb-8 text-white uppercase pb-4 lg:pb-10">
+      <h3 class=" text-lg md:text-xl lg:text-3xl font-bold mb-8 text-white uppercase pb-4 lg:pb-10">
         {{ t('experience.title') }}
       </h3>
       <ul class="timeline timeline-vertical">
@@ -70,11 +70,11 @@ const experienceTimeline = computed(() => [
 
     <!-- EDUCATION -->
     <div class="flex flex-col items-center font-mono">
-      <h3 class="text-3xl font-bold text-white uppercase  pb-4 font-mono">
+      <h3 class="text-lg md:text-xl lg:text-3xl font-bold text-white uppercase pt-8 pb-4 font-mono">
         {{ t('education.title') }}
       </h3>
       <ul class="timeline timeline-vertical">
-        <li v-for="(item, i) in educationTimeline" :key="item.period" class="timeline-item mb-6">
+        <li v-for="(item, i) in educationTimeline" :key="item.period" class="timeline-item mb-6 ">
           <template v-if="i !== 0">
             <hr />
           </template>
@@ -95,7 +95,7 @@ const experienceTimeline = computed(() => [
             ]"
           >
             <div class="text-xs text-secondary font-semibold mb-1">{{ item.period }}</div>
-            <div>{{ item.label }}</div>
+            <div class="text-">{{ item.label }}</div>
           </div>
 
           <div class="timeline-middle">
