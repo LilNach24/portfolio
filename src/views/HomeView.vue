@@ -1,96 +1,74 @@
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
+import TheNavbar from '@/components/TheNavbar.vue'
 import ThePersonalCard from '@/components/ThePersonalCard.vue'
 import TheFormation from '@/components/TheResumeTimeline.vue'
-import TheNavbar from '@/components/TheNavbar.vue'
 
 const sections = ['home', 'about', 'contact']
 const currentIndex = ref(0)
-let isScrolling = false
 
-function scrollToSection(index: number) {
-  const section = document.getElementById(sections[index])
-  if (section) {
-    section.scrollIntoView({ behavior: 'smooth' })
-    currentIndex.value = index
-  }
+function scrollToSection(id: string | number) {
+  const sectionEl =
+    typeof id === 'number' ? document.getElementById(sections[id]) : document.getElementById(id)
+  sectionEl?.scrollIntoView({ behavior: 'smooth' })
 }
 
-function handleScroll(event: WheelEvent) {
-  if (isScrolling) return
-  isScrolling = true
-
-  const delta = event.deltaY
-  if (delta > 0 && currentIndex.value < sections.length - 1) {
-    currentIndex.value++
-  } else if (delta < 0 && currentIndex.value > 0) {
-    currentIndex.value--
-  }
-
-  scrollToSection(currentIndex.value)
-  setTimeout(() => (isScrolling = false), 1000)
-}
-
-function handleKey(event: KeyboardEvent) {
-  if (isScrolling) return
-  if (event.key === 'ArrowDown' && currentIndex.value < sections.length - 1) {
-    isScrolling = true
-    currentIndex.value++
-    scrollToSection(currentIndex.value)
-    setTimeout(() => (isScrolling = false), 1000)
-  } else if (event.key === 'ArrowUp' && currentIndex.value > 0) {
-    isScrolling = true
-    currentIndex.value--
-    scrollToSection(currentIndex.value)
-    setTimeout(() => (isScrolling = false), 1000)
-  }
-}
+let observer: IntersectionObserver | undefined
 
 onMounted(() => {
-  window.addEventListener('wheel', handleScroll, { passive: false })
-  window.addEventListener('keydown', handleKey)
+  observer = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          currentIndex.value = sections.indexOf(entry.target.id)
+        }
+      }
+    },
+    { root: null, threshold: 0.55 },
+  )
+
+  sections.forEach((id) => {
+    const el = document.getElementById(id)
+    if (el) observer!.observe(el)
+  })
 })
 
-onBeforeUnmount(() => {
-  window.removeEventListener('wheel', handleScroll)
-  window.removeEventListener('keydown', handleKey)
-})
+onBeforeUnmount(() => observer?.disconnect())
 </script>
 
 <template>
   <TheNavbar :scrollToSection="scrollToSection" />
-  <main class="h-screen overflow-hidden no-scrollbar">
-    <div class="fixed right-6 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-50">
-      <template v-for="(id, i) in sections" :key="id">
-        <button
-          :class="[
-            'w-2 h-2 rounded-full transition',
-            currentIndex === i ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white',
-          ]"
-          @click="scrollToSection(i)"
-        ></button>
-      </template>
+
+  <main class="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth no-scrollbar">
+    <div class="hidden sm:flex fixed right-6 top-1/2 -translate-y-1/2 z-50 flex-col gap-3">
+      <button
+        v-for="(id, i) in sections"
+        :key="id"
+        class="btn btn-circle btn-xs transition-all"
+        :class="currentIndex === i ? 'bg-white' : 'bg-white/40 hover:bg-white/70'"
+        @click="scrollToSection(id)"
+      />
     </div>
+
     <section
       id="home"
-      class="bg-gradient-to-r from-[#291ca0] via-[#c4712d] to-[#a325d4] bg-[length:400%_400%] animate-gradient min-h-screen w-full"
+      class="min-h-screen snap-start flex items-center justify-center bg-gradient-to-r from-[#291ca0] via-[#c4712d] to-[#a325d4] bg-[length:400%_400%] animate-gradient"
     >
-      <div class="flex items-center justify-center min-h-screen sm:p-10">
-        <ThePersonalCard />
-      </div>
+      <ThePersonalCard />
     </section>
 
     <section
       id="about"
-      class="bg-gradient-to-r from-[#4c0b81] via-[#330879] to-[#72039e] bg-[length:400%_400%] animate-gradient min-h-screen"
+      class="min-h-screen snap-start flex items-center justify-center bg-gradient-to-r from-[#4c0b81] via-[#330879] to-[#72039e] bg-[length:400%_400%] animate-gradient text-white"
     >
-      <div class="flex items-center justify-center min-h-screen text-white">
-        <TheFormation />
-      </div>
+      <TheFormation />
     </section>
 
-    <section id="contact" class="h-screen flex items-center justify-center bg-blue-900 text-white">
+    <section
+      id="contact"
+      class="min-h-screen snap-start flex items-center justify-center bg-blue-900 text-white"
+    >
       <h1 class="text-5xl font-bold">CONTACT</h1>
     </section>
   </main>
