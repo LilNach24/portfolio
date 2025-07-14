@@ -8,7 +8,7 @@ const { t } = useI18n()
 <template>
   <div class="card animate-cartaBottom">
     <figure>
-      <img src="@/assets/img/profile.png" class="w-xs" />
+      <img src="@/assets/img/profile.jpg" class="w-48 xl:w-56 rounded-full" />
     </figure>
     <div class="card-body items-center text-center">
       <h2 class="card-title text-4xl font-bold font-pacifico text-white">Nacho de la Torre Planas</h2>
