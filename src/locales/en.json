@@ -2,6 +2,8 @@
   "navbar": {
     "home": "Home",
     "about": "About me",
+    "experience": "Experience",
+    "education": "Education",
     "contact": "Contact"
   },
   "personalCard": {
@@ -11,7 +13,7 @@
     "title": "About me"
   },
   "education": {
-    "title": "Formation",
+    "title": "Education",
     "items": {
       "2024-2025": "Administration of Computer Systems and Networks",
       "2022-2024": "Web Application Development",
