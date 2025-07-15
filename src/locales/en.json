@@ -10,7 +10,12 @@
     "job": "Software engineer"
   },
   "about": {
-    "title": "About me"
+    "title": "About Me",
+    "summary": "Hi, my name is Nacho. I'm passionate about the IT world in all its forms. While I especially enjoy programming, I've always been curious about how everything works behind the scenes in tech.\n\nThroughout my journey, I’ve developed broad knowledge that spans web development, automation, and technical support. I regularly work with technologies like Vue, Laravel, Git, Docker, and many more — but what really defines me is my mindset: when something catches my interest, I won’t stop until I achieve it. I love learning, diving deep, and taking on new challenges, whether professional or personal.\n\nOutside of work, I’m very into sports and enjoy staying active with all kinds of physical activities. I'm also a huge motorsport fan, especially Formula 1, where I admire the precision, strategy, and constant evolution.",
+    "languages": "Languages",
+    "hobbies": "Hobbies",
+    "hobbiesList": ["Djing", "Motorsports & cars", "Various sports", "Gaming"],
+    "qualitiesList": ["Constant curiosity", "Perseverance", "Continuous learning", "Teamwork"]
   },
   "education": {
     "title": "Education",

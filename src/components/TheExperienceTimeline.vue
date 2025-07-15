@@ -13,7 +13,7 @@ const experienceTimeline = computed(() => [
 <template>
   <div class="relative flex flex-col items-center font-mono w-full max-w-3xl">
     <h3
-      class="absolute -top-10 md:-top-14 lg:-top-16 left-1/2 -translate-x-1/2 text-lg md:text-xl lg:text-3xl font-bold text-white uppercase"
+      class="w-full text-center text-md sm:absolute sm:-top-10 md:sm:-top-14 lg:sm:-top-16 sm:left-1/2 sm:-translate-x-1/2 sm:text-lg md:text-xl lg:text-xl font-bold text-white uppercase"
     >
       {{ t('experience.title') }}
     </h3>
