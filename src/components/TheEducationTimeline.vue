@@ -12,10 +12,15 @@ const educationTimeline = computed(() => [
 </script>
 
 <template>
-  <div class="flex flex-col items-center font-mono w-full max-w-3xl">
-    <h3 class="text-lg md:text-xl lg:text-3xl font-bold mb-8 text-white uppercase">
+  <div class="relative flex flex-col items-center font-mono w-full max-w-3xl">
+    <h3
+      class="absolute -top-10 lg:-top-12 xl:-top-14 left-1/2 -translate-x-1/2 text-lg md:text-xl lg:text-3xl font-bold text-white uppercase"
+    >
       {{ t('education.title') }}
     </h3>
+
+    <div class="h-12 md:h-16 lg:h-20" />
+
     <ul class="timeline timeline-vertical">
       <li
         v-for="(item, i) in educationTimeline"
@@ -36,8 +41,15 @@ const educationTimeline = computed(() => [
           <div class="text-sm sm:text-base">{{ item.label }}</div>
         </div>
         <div class="timeline-middle">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4 sm:h-5 sm:w-5 text-secondary">
-            <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-4 w-4 sm:h-5 sm:w-5 text-secondary"
+          >
+            <path
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+            />
           </svg>
         </div>
         <template v-if="i !== educationTimeline.length - 1"><hr /></template>

@@ -11,10 +11,14 @@ const experienceTimeline = computed(() => [
 </script>
 
 <template>
-  <div class="flex flex-col items-center font-mono w-full max-w-3xl">
-    <h3 class="text-lg md:text-xl lg:text-3xl font-bold mb-8 text-white uppercase">
+  <div class="relative flex flex-col items-center font-mono w-full max-w-3xl">
+    <h3
+      class="absolute -top-10 md:-top-14 lg:-top-16 left-1/2 -translate-x-1/2 text-lg md:text-xl lg:text-3xl font-bold text-white uppercase"
+    >
       {{ t('experience.title') }}
     </h3>
+
+    <div class="h-12 md:h-16 lg:h-20" />
 
     <ul class="timeline timeline-vertical">
       <li
@@ -23,26 +27,18 @@ const experienceTimeline = computed(() => [
         class="timeline-item mb-4 sm:mb-6"
       >
         <template v-if="i !== 0"><hr /></template>
-
         <div
           :class="[
             i % 2 === 0 ? 'timeline-start' : 'timeline-end',
-            'timeline-box',
-            'shadow',
-            'bg-neutral',
-            'text-neutral-content',
-            'uppercase',
-            'w-full',
-            'sm:max-w-md',
-            'mx-auto',
-            'p-3 sm:p-4',
-            'text-left',
+            'timeline-box shadow bg-neutral text-neutral-content uppercase',
+            'w-full sm:max-w-md mx-auto p-3 sm:p-4 text-left',
           ]"
         >
-          <div class="text-xs sm:text-sm text-primary font-semibold mb-1">{{ item.period }}</div>
+          <div class="text-xs sm:text-sm text-primary font-semibold mb-1">
+            {{ item.period }}
+          </div>
           <div class="text-sm sm:text-base max-w-80">{{ item.label }}</div>
         </div>
-
         <div class="timeline-middle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +51,6 @@ const experienceTimeline = computed(() => [
             />
           </svg>
         </div>
-
         <template v-if="i !== experienceTimeline.length - 1"><hr /></template>
       </li>
     </ul>

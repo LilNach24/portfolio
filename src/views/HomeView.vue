@@ -65,7 +65,7 @@ onBeforeUnmount(() => observer?.disconnect())
     <!-- ABOUT -->
     <section
       id="about"
-      class="min-h-screen snap-start flex items-center justify-center bg-gradient-to-r from-[#4c0b81] via-[#330879] to-[#72039e] bg-[length:400%_400%] animate-gradient text-white"
+      class="min-h-screen snap-start flex items-center justify-center bg-gradient-to-r from-[#262427] via-[#5303bd] to-[#7042da] text-white"
     >
       <TheAboutMe />
     </section>
@@ -73,7 +73,7 @@ onBeforeUnmount(() => observer?.disconnect())
     <!-- EXPERIENCE -->
     <section
       id="experience"
-      class="min-h-screen snap-start flex items-center justify-center bg-[#121212] text-white"
+      class="min-h-screen snap-start flex items-center justify-center bg-gradient-to-r from-[#1c1a45] via-[#36033d] to-[#4b2354] text-white"
     >
       <TheExperienceTimeline />
     </section>
@@ -81,7 +81,7 @@ onBeforeUnmount(() => observer?.disconnect())
     <!-- EDUCATION -->
     <section
       id="education"
-      class="min-h-screen snap-start flex items-center justify-center bg-[#181818] text-white"
+      class="min-h-screen snap-start flex items-center justify-center bg-gradient-to-r from-[#1f2937] via-[#374151] to-[#111827] text-white"
     >
       <TheEducationTimeline />
     </section>
@@ -89,7 +89,7 @@ onBeforeUnmount(() => observer?.disconnect())
     <!-- CONTACT -->
     <section
       id="contact"
-      class="min-h-screen snap-start flex items-center justify-center bg-blue-900 text-white"
+      class="min-h-screen snap-start flex items-center justify-center bg-gradient-to-r from-[#0f172a] via-[#1e3a8a] to-[#312e81] text-white"
     >
       <TheContact />
     </section>
