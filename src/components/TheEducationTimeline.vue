@@ -21,7 +21,7 @@ const educationTimeline = computed(() => [
 
     <div class="h-12 md:h-16 lg:h-20" />
 
-    <ul class="timeline timeline-vertical">
+    <ul class="timeline timeline-vertical p-3 lg:p-0">
       <li
         v-for="(item, i) in educationTimeline"
         :key="item.period"
