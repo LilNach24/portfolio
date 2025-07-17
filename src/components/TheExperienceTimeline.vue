@@ -13,14 +13,14 @@ const experienceTimeline = computed(() => [
 <template>
   <div class="relative flex flex-col items-center font-mono w-full max-w-3xl">
     <h3
-      class="w-full text-center text-md sm:absolute sm:-top-10 md:sm:-top-14 lg:sm:-top-16 sm:left-1/2 sm:-translate-x-1/2 sm:text-lg md:text-xl lg:text-xl font-bold text-white uppercase"
+      class="w-full text-center text-md sm:absolute sm:-top-10 md:sm:-top-14 lg:sm:-top-16 sm:left-1/2 sm:-translate-x-1/2 sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-bold text-white uppercase"
     >
       {{ t('experience.title') }}
     </h3>
 
     <div class="h-12 md:h-16 lg:h-20" />
 
-    <ul class="timeline timeline-vertical">
+    <ul class="timeline timeline-vertical p-3 lg:p-0">
       <li
         v-for="(item, i) in experienceTimeline"
         :key="item.period"

@@ -14,6 +14,7 @@
     "summary": "Hola, mi nombre es Nacho. Me apasiona el mundo IT en todas sus formas. Aunque disfruto especialmente programando, siempre he tenido curiosidad por entender cómo funciona todo lo que me rodea en el ámbito tecnológico.\n\nA lo largo de mi trayectoria he adquirido conocimientos amplios que abarcan desde el desarrollo web hasta la automatización y el soporte técnico. Trabajo habitualmente con tecnologías como Vue, Laravel, Git, Docker y muchas otras, pero lo que más me define es mi actitud: cuando algo me interesa, no paro hasta conseguirlo. Me gusta aprender, profundizar y superar retos, ya sean profesionales o personales.\n\nEn lo personal, me considero muy deportista y disfruto practicando todo tipo de actividades físicas. También soy un gran aficionado al mundo del motor, especialmente a la Fórmula 1, donde me inspiran la precisión, la estrategia y la mejora constante.",
     "languages": "Idiomas",
     "hobbies": "Hobbies",
+    "qualities": "Qualities",
     "hobbiesList": ["Djing", "Motorsport y coches", "Deportes varios", "Gaming"],
     "qualitiesList": [
       "Curiosidad constante",
@@ -36,5 +37,8 @@
       "2024-presente": "Desarrollador Full Stack en Brain2Store (Sant Cugat del Vallès)",
       "2023-2024": "Desarrollador Full Stack en Saint-Gobain (l'Arboç)"
     }
+  },
+  "contact": {
+    "title": "Contacto"
   }
 }
